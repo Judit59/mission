@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Equip de Treball - Iter Plèiades" />
+
+    <!-- Títol de la pàgina web -->
+    <title>Iter Plèiades - Equip</title>
+
+    <!-- Importar fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Fitxers CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <link href="animation.css" rel="stylesheet" type="text/css" /> 
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Estils incrustats -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.229);
+      }
+      
+      header {
+        position: relative;
+        background: none;
+        color: rgb(255, 255, 255);
+        padding: 60px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("capce.jpg") center/cover no-repeat;
+        filter: brightness(0.5);
+        z-index: 0;
+      }
+      
+      header h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5em;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      header p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+        opacity: 0.9;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+      
+      nav {
+        background-color: #5c5c94;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 4px rgb(255, 255, 255);
+        z-index: 100;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #667eea;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      
+      nav a:hover {
+        color: #6359f0;
+      }
+      
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      section {
+        margin: 60px 0;
+        padding: 40px 20px;
+      }
+      
+      section h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5em;
+        color: #667eea;
+        margin-bottom: 30px;
+        text-align: center;
+        border-bottom: 3px solid #764ba2;
+        padding-bottom: 15px;
+      }
+      
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 20px 0;
+      }
+      
+      .card {
+        background: #cad0f8;
+        border-radius: 12px;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 32px rgb(255, 255, 255);
+      }
+      
+      .card-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+      }
+      
+      .card-header {
+        background: linear-gradient(135deg, #000a39 0%, #5081dc 100%);
+        color: rgb(255, 255, 255);
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+      }
+      
+      .card-header h3 {
+        font-size: 1.1em;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .card-body {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card-role {
+        font-weight: bold;
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+      
+      footer {
+        background-color: #1b0e54;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 60px;
+      }
+      
+      footer p {
+        margin: 5px 0;
+      }
+      
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.5em;
+        }
+        
+        nav ul {
+          gap: 15px;
+        }
+        
+        section h2 {
+          font-size: 1.8em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Capçalera de la pàgina -->
+    <header>
+      <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">ITER PLÈIADES</h1>
+     
+    </header>
+    
+    <!-- Navegació -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="sobre-projecte.html">Sobre el Projecte</a></li>
+        <li><a href="problematica.html">Problemàtica</a></li> 
+        
+        <li><a href="equip.html">Equip</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+        <li><a href="visita.html">Visita a la UPC</a></li>
+         <li><a href="llançament.html">Llançament</a></li>
+         <li><a href="enregistrament a la ràdio.html">enregistrament a la ràdio</a></li>
+      </ul>
+    </nav>z
+
+    <!-- Contingut principal -->
+    <main>
+      <section>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Coneix l'equip ITER Plèiades!</h1>
+        
+        
+        <div class="container">
+          
+          <div class="card">
+            <img src="IMG-20260319-WA0008 (1).jpg" alt="Tim Björnstad Poses" class="card-image">
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Tim Björnstad Poses</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Programador</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Responsable de programar tots els sensors del nostre satèl·lit, ha sigut l'encarregat de dur a terme aquesta tasca pel seu gran interès en el món de la robòtica i la programació, juntament amb L'Armand Bonjkiemizz han fet que el nostre satèl·lit sigui possible. </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="IMG-20260319-WA0007.jpg" alt="Armand Bonjkiemizz Codern" class="card-image">
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Armand Bonjkiemizz Codern</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Programador</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Responsable de programar tots els sensors del nostre satèl·lit juntament amb el Tim Björnstand. L'Armand és un noi que cursa l'optativa de robòtica, també té una estima en el món de la robòtica i la programació, això ha portat una gran lleugeresa en crear el nostre satèl·lit.</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="IMG-20260319-WA0006.jpg" alt="Bruno Martín Toro" class="card-image">
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Bruno Martín Toro</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Producció d’informes i fabricació del paracaigudes</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Encarregat de produir el nostre paracaigudes, en Bruno Martin té amplis coneixements sobre costura gràcies a passar temps amb les seves àvies, és un noi molt familiar. També ha col·laborat en escriure els informes juntament amb la Noa Santangelo, gràcies a la seva claredat l'informe ha sigut precís i aclaridor.</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="IMG-20260319-WA0009.jpg" alt="Nora Muga Turmo" class="card-image">
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Nora Muga Turmo</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Disseny 3D de l’estructura</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Executora de la carcassa amb estructura triangular, és una noia que cursa l'assignatura de dibuix tècnic juntament amb la seva creativitat ha creat un disseny molt innovador i desenvolupat. Sense la Nora Muga el nostre projecte no seria innovador.</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="IMG-20260319-WA0005.jpg" alt="Noa Santangelo Latorre" class="card-image">
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Noa Santangelo Latorre</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Producció d’informes i supervisió de les xarxes socials</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Encarregada d'escriure informes juntament amb el Bruno Martin. La Noa Santangelo és una noia amb un vocabulri formal que sumat a les qualitats del Bruno ha sortit un informe formal, concís i organitzat. </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="cap d'any 25 (9).JPG" alt="Judit Soriano Ortiz" class="card-image">
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Judit Soriano Ortiz</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Disseny 3D de l'estructura</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">Executora del disseny de varetes amb la incorporació d'un sistema de suspensió. La Judit Soriano és una noia prometedora que es preocupa per la seguretat de tots els components, gràcies a aquesta actitud els sensors no patiran cap anomalia.</p>
+            </div>
+          </div>
+          <section>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">TUTORS</h2>
+        
+        <div class="container">
+          </section>
+        
+
+          <div class="card">
+            
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">David Lluís Jornet</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Tutor del projecte</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">L'equip iter plèiades fa una menció especial al seu tutor, David Lluís Jornet, que ha dedicat el seu temps lliure en formr l'equip per ser un compedido competent. L'equip agraeix la seva dediicació, esforç i temps.</p>
+            </div>
+          </div>
+
+          <div class="card">
+           
+            <div class="card-header">
+              <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Maria José Lora</h3>
+            </div>
+            <div class="card-body">
+              <div class="card-role">Tutora deL projecte</div>
+              <p style="font-family: Georgia, 'Times New Roman', Times, serif;">L'equip iter plèiades agraeix la dedicació de la Maria, ha instrit als joves progrmadors per que sigui possible la funcionalitat del satèl·lit. </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p><span>⭐</span> De l'aula al cel- EQUIP ITERPLÈIADES </a><span>⭐</span></p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Problemàtica - Iter Plèiades" />
+
+    <!-- Títol de la pàgina web -->
+    <title>Iter Plèiades - Problemàtica</title>
+
+    <!-- Importar fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Fitxers CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <link href="animation.css" rel="stylesheet" type="text/css" /> 
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Estils incrustats -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+       header {
+        position: relative;
+        background: none;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("foto bona.jpg") center/cover no-repeat;
+        filter: brightness(0.7);
+        z-index: 0;
+      }
+      
+      header h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5em;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      header p {
+        font-size: 1.3em;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(1, 1, 1);
+      }
+      
+      nav {
+        background-color: #5c5c94;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #010b3c;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      
+      nav a:hover {
+        color: #495fee;
+      }
+      
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      section {
+        margin: 60px 0;
+        padding: 40px 20px;
+      }
+      
+      section h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5em;
+        color: #0c163e;
+        margin-bottom: 30px;
+        text-align: center;
+        border-bottom: 3px solid #b1bbff;
+        padding-bottom: 15px;
+      }
+      
+      .content-box {
+        background: rgb(5, 0, 73);
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 18px rgb(255, 255, 255);
+      }
+      
+      .content-box p {
+        margin-bottom: 20px;
+        font-size: 1.05em;
+        color: #ffffff;
+      }
+      
+      footer {
+        background-color: #1b0e54;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 60px;
+      }
+      
+      footer p {
+        margin: 5px 0;
+      }
+      
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.5em;
+        }
+        
+        nav ul {
+          gap: 15px;
+        }
+        
+        section h2 {
+          font-size: 1.8em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 style="font-family: sokas barsokas;">ITER PLÈIADES</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="sobre-projecte.html">Sobre el Projecte</a></li>
+        <li><a href="problematica.html">Problemàtica</a></li> 
+        <li><a href="equip.html">Equip</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+        <li><a href="visita.html">Visita a la UPC</a></li>
+        <li><a href="llançament.html">Llançament</a></li>
+        <li><a href="enregistrament a la ràdio.html">Enregistrament a la ràdio</a></li>
+        
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2 style="font-family: sokas barsokas;">PROBLEMÀTICA</h2>
+        <div class="content-box">
+          <section style="text-align: center;">
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">No més incendis</h1>
+        </section>
+          <video controls width="100%" style="max-width: 600px; margin: 20px auto; display: block;">
+            <source src="video.mp4" type="video/mp4">
+            El teu navegador no suporta el vídeo.
+          </video>
+            
+            <p style="font-family: sokas barsokas;">La nostra missió secundària es basa a detectar incendis forestals abans que s’iniciïn   mitjançant l’anàlisi del terreny i la determinació de zones de risc. Aquesta proposta va sorgir de la gran preocupació generada per la problemàtica dels incendis forestals a zones agrícoles. Segons dades de l'ESA, al voltant de 45.000 incendis forestals tenen lloc al llarg d'Europa cada any, amb mig milió d’hectàrees perdudes només en la zona mediterrània, fet el qual suposa un gran cost.</p>
+            <p style="font-family: sokas barsokas;"></p>
+            <p style="font-family: sokas barsokas;">A més, els incendis són un molt greu problema amb afrontat pel nostre país cada any, sobretot durant els mesos de més calor. Venint de Terrassa, zona propensa a incendis, hem sigut testimonis d’incendis certament greus molt a prop de casa nostra. Per posar-ho en perspectiva, aquest darrer any, un incendi es va produir al barri del Pla del Bonaire, ubicat als afores de la ciutat, quan un camp de rostolls va incendiar a causa de la calor estival</p>
+            <p style="font-family: sokas barsokas;"></p>
+            <p style="font-family: sokas barsokas;">Per tant, vam arribat a la conclusió que un satèl·lit capaç de preveure les zones més propenses a incendis, que hagués alertat que aquests camps eren una zona de risc, ens hauria ajudat a evitar pèrdues, tant materials com humanes.</p>
+            
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p><span>⭐</span>De l'aula al cel equip ITER Plèiades <span>⭐</span></p>
+    </footer>
+  </body>
+</html>

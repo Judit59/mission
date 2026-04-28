@@ -1,0 +1,20 @@
+
+/* Set up colour palette and fonts using variables */
+
+:root {
+  --primary: #ffffff;
+  --secondary: #1a086b;
+  --tertiary: #90b5ff;
+  --page: #ffffff;
+  --onprimary: #555559;
+  --onsecondary: #ffffff;
+  --ontertiary: #555559;
+  --onpage: #333333;
+  --detail: #999798;
+  --detail2: #c9c8c7;
+
+  --body-font: 1rem 'Nunito', sans-serif;
+  --header-font: lighter 3rem 'Russo One', sans-serif;
+  --title-font: lighter 1.5rem 'Nunito', sans-serif;
+  --quote-font: lighter 1.5rem 'Nunito', sans-serif;
+}

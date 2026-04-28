@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Sobre el Projecte - Iter Plèiades" />
+
+    <!-- Títol de la pàgina web -->
+    <title>Iter Plèiades - Sobre el Projecte</title>
+
+    <!-- Importar fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Fitxers CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <link href="animation.css" rel="stylesheet" type="text/css" /> 
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Estils incrustats -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+      header {
+        position: relative;
+        background: none;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("capce.jpg") center/cover no-repeat;
+        filter: brightness(0.5);
+        z-index: 0;
+      }
+      
+      header h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5em;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+      
+      header p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+        opacity: 0.9;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+      }
+      
+      nav {
+        background-color: #5c5c94;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color:#667eea;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      
+      nav a:hover {
+        color:  #1b0e54;
+      }
+      
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      section {
+        margin: 60px 0;
+        padding: 40px 20px;
+      }
+      
+      section h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5em;
+        color: #082442;
+        margin-bottom: 30px;
+        text-align: center;
+        border-bottom: 3px solid #b1bbff;
+        padding-bottom: 15px;
+      }
+      
+      footer {
+        background-color: #04014e;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 60px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      footer p {
+        margin: 5px 0;
+      }
+      
+      section img {
+        max-width: 400px;
+        width: 100%;
+        height: 280px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        object-fit: cover;
+      }
+
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 40px 0;
+        padding: 20px;
+      }
+
+      .wrap img {
+        max-width: 300px;
+        width: 100%;
+        height: 280px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        object-fit: cover;
+      }
+
+      .wrap img:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.5em;
+        }
+        header p {
+          font-size: 3em;
+        }
+        nav ul {
+          gap: 15px;
+        }
+        
+        section h2 {
+          font-size: 1.8em;
+        }
+
+        section img {
+          max-width: 300px;
+        }
+
+        .wrap {
+          gap: 15px;
+          padding: 15px;
+        } 
+
+        .wrap img {
+          max-width: 550px;
+        }
+      }
+    </style>
+  </head>
+
+  
+
+  <body>
+    <!-- Capçalera de la pàgina -->
+    <header>
+      <h1 style="font-family: kostas barsokas;">
+        ITER PLÈIADES
+      </h1>
+      </header>
+  </body>
+    
+    <!-- Navegació -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="sobre-projecte.html">Sobre el Projecte</a></li>
+        <li><a href="problematica.html">Problemàtica</a></li>
+        <li><a href="equip.html">Equip</a></li>
+        <li><a href="contacte.html">Contacte</a></li> 
+        <li><a href="visita.html">Visita a la UPC</a></li>
+        <li><a href="llançament.html">Llançament</a></li>
+        <li><a href="enregistrament a la ràdio.html">Enregistrament a la ràdio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contingut principal -->
+    <main>
+      <section>
+        <h2 style="font-family: kostas barsokas;">SOBRE EL PROJECTE</h2>
+        <h1 style="font-family: kostas barsokas;">L'equip ITER Plèiades no ha deixat de treballar en el seu CanSat.</h1>
+        <section style="text-align: justify;" >
+        
+          <header>
+           <p style="font-family: kostas barsokas;">La creació d'un cansat consisteix a  dissenyar, construir i llançar un mini satèl·lit  de la mida d'una llauna de refresc.  La funcionalitat del satèl·lit ha de basar-se en dues missions la primària i la secundària. En primer lloc, la missió primària tracta en desenvolupar tots els subsistemes principals que es troben en un satèl·lit (energia, comunicacions, sensors, etc.).  En segon lloc, la missió secundària ha de tenir una finalitat científica i una demostració tecnològica. Finalment, els equips seleccionats han de defensar el seu projecte davant d'un tribunal a la UPC de Terrassa.</p>
+          </p>
+          </header>
+        </section >
+        <section class="wrap" style="text-align:center;">
+        
+      <header style="opacity: initial;" >
+        <section style="text-align: justify;">
+          <p style="font-family: kostas barsokas;"  >Cansat és una competició internacional que es desenvolupa en tres fases (local, estatal i europea). La fase local a Catalunya  l’organitza L'Escola Superior d'Enginyeries Industrial, Aeroespacial i Audiovisual de Terrassa, de la Universitat Politècnica de Catalunya,  i s’impulsa des de la Generalitat en el marc de l’Estratègia NewSpace de Catalunya del Departament d’Empresa i Treball, i en col·laboració amb el Departament d’Educació i Formació Professional de la Generalitat i l'Institut d'Estudis Espacials de Catalunya.
+        </header >
+          </p style="font-size:2em;">
+        </section>
+        
+        <section class="wrap" style="text-align:center;">
+        
+        
+        <section style="text-align: left;">
+          <p style="font-family: kostas barsokas;">Organitzada per:</p>
+       <img style="height: auto; width: 500em;" src="organitzadors .png" alt="">
+      
+       
+      </section>
+      
+    </main>
+    <main>
+     
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p><span>⭐</span> De l'aula al cel- EQUIP ITERPLÈIADES </a><span>⭐</span></p>
+    </footer>
+
+  </body>
+</html>
